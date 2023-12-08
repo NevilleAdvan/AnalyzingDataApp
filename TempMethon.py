@@ -123,6 +123,6 @@ def table_run(entry_ymin,entry_ymax):
     elif Open_file_path:
         file_table_run(Open_file_path,ymin,ymax)
         ret= True
-    
+    print("Valid ret:", ret)
     return ret
 

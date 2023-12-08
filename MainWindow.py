@@ -64,7 +64,7 @@ entry_ymax.bind('<FocusIn>',  lambda event: entry_methon.on_entry_click(event, e
 entry_ymax.bind('<FocusOut>',  lambda event: entry_methon.on_entry_leave(event, entry_ymax, default_max))
 label_current_file = tk.Label(window, text="点击\"文件\"打开需要分析的log文件")
 
-btn_run = tk.Button(window, text="运行", command=BtnRunClick(tk,entry_ymin,entry_ymax))
+btn_run = tk.Button(window, text="运行", command=lambda: BtnRunClick(tk,entry_ymin,entry_ymax))
 # 布局按钮和标签
 #btn_open_folder.pack()
 #btn_open_file.pack()
