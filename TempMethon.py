@@ -58,14 +58,11 @@ def file_table_run(file_path,ymin , ymax):
 def folder_table_run(set_folder_path,ymin,ymax):
     # 获取文件夹中的所有文件
     file_list = os.listdir(set_folder_path)
-
-    
-
     tablenum = 1
 
     # 遍历文件列表
     for file_name in file_list:
-        if "soc_monitor" not in file_name:
+        if ".log" not in file_name:
             continue
         # 构建文件路径
         file_path = os.path.join(set_folder_path, file_name)

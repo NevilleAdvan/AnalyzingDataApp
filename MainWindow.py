@@ -1,7 +1,7 @@
 import TempMethon as temp_methon
 import EntryMethon as entry_methon
 import tkinter as tk
-
+import time
 
 # 定义按钮点击事件处理函数
 def show_popup(tkwin):
